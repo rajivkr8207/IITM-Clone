@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primarybg-color:#F5F5F5;
+  --secondarytx-color: white;
+  --third-color:black;
+  --sidenavbg-color:#EFEFEF ;
+  --sidenavtx-color: #6F6F6F;
+}
+
+body{
+  background:var(--sidenavbg-color);
+}
+/* ::-webkit-scrollbar{
+  width: 11.5rem;
+}
+::-webkit-scrollbar-track{
+  background-color: rgb(37, 37, 37);
+}
+::-webkit-scrollbar-thumb{
+  background: #6F6F6F;
+  border: 2px solid red;
+  border-radius: 9px;
+  background-clip: content-box;
+
+} */
+
+#main_contextAll{
+  position: absolute;
+  top: 89px;
+  right: 0px;
+  background:white;
+  /* color: white;
+  width:auto;
+  height:auto; */
+  /* overflow: hidden; */
+  padding: 1.7rem 0rem 0rem 3rem;
+  z-index: 0;
+}
+#main_header_menu{
+  display: none;
+}
+
+
+#Nav_bar{
+  position: fixed;
+  width: 100vw;
+
+  z-index: 1;
+  background: var(--primarybg-color);
+  box-shadow: 0px 3px rgb(209, 206, 206);
+  
+}
+
+
+#iitm_logo{
+  width: 10rem;
+  height: 3rem;
+}
+
+
+#sign_out{
+  font-size: small;
+  background: transparent;
+  color:var(--third-color);
+  border: 1px solid black;
+  padding: 0.1rem 0.5rem;
+  margin-right:2rem ;
+  border-radius: 5%;
+}
+#sign_out:hover{
+  background: var(--third-color);
+  color: var(--secondarytx-color);
+}
+
+
+#side_navbar{
+  position: fixed;
+  top: 89px;
+  left: 0px;
+  width: 25vw;
+  height: 85vh;
+  background:var(--sidenavbg-color);
+  overflow: hidden;
+  /* margin-right: 0.8rem; */
+  z-index: 1;
+}
+
+#side_navbar ul li{
+  margin: 1rem 0rem;
+  /* color: #787870; */
+  color: #6F6F6F;
+}
+#side_navbar ul li:hover{
+  color: #A0322C;
+}
+@media only screen and (max-width: 820px)  {
+  #side_navbar{
+    display: none;
+    
+  }
+
+  #main_contextAll{
+    width: 100%;
+    height: auto;
+  }
+  #main_page786{
+    width: 100vw;
+  }
+  #sign_out_top{
+    display: none;
+  }
+  #main_header_menu{
+    display: block;
+  }
+  
+ 
+}
+@media (max-width:820px) {
+  .mobile_Navbar{
+    width: 100%;
+    height: 98vh;
+    margin: 0.5rem;
+    background: yellow;
+    z-index: 10;
+    /* display: block ; */
+  }
+  
+}
+.mobile_Navbar{
+  width: 100%;
+  height: 98vh;
+  margin: 0.5rem;
+  background: #FFFFFF;
+  z-index: 10;
+  display: none;
+}
+
+.Active{
+    color: #A0322C;
+}
+#sidenav_report{
+  font-size: 0.76rem;
+  font-style: italic;
+}
+#sidenav_Course{
+  font-size: small;
+  background: #F5365C;
+  color: var(--secondarytx-color);
+  padding: 0.2rem;
+}
+#main_page786{
+  width: 70vw;
+}
+
+footer{
+  width: 70vw;
+  background: rgb(194, 0, 0);
+  color: white;
+  margin: 0;
+  font-size: 0.8rem;
+  position:relative;
+  bottom: 0;
+  right: 0;
+}
+
+#my_course{
+  height: 85vh;
+}
+#course_sub{
+  width: 14rem;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  background: #380909;
+  /* border: 1px solid black; */
+}
+
+#course_sub__flex{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.course_center{
+  background: #EFEFEF;
+}
+#Pending_page{
+  height: 78vh;
+}
+
+#Hall_btn{
+  padding: 0.1rem 1.5rem;
+  border: 1px solid black;
+  cursor: progress;
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
